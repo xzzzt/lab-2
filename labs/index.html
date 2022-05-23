@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Малявкин Юрий</title>
+	
+     
+
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+	<script type="text/javascript" src="scripts/gallary.js"></script>
+	
+
+
+
+	<style>
+   li {
+    list-style-type: none; /* Убираем маркеры */
+   }</style>
+   
+
+</head>
+<body>
+	
+	<header id="header" class="header"> 
+
+		<div class="container position  "> 
+			<div class="header-box">
+				<div class="menu-box">
+					<div class="dropdown">
+						<button class="dropbtn"><img src="images/menu.png"></button>
+						<div class="dropdown-content">
+							<li><a href="#section-1" class="link">Обо мне</a></li>
+							<li><a href="#section-2" class="link">Хобби</a></li>
+							<li><a href="#section-3" class="link">Галерея</a></li>
+							<li><a href="#footer" class="link">Контакты</a></li>
+						</div>
+					  </div>
+
+				<ul class="menu">
+					<li><a href="#section-1" class="link">Обо мне</a></li>
+					<li><a href="#section-2" class="link">Хобби</a></li>
+					<li><a href="#section-3" class="link">Галерея</a></li>
+					<li><a href="#footer" class="link">Контакты</a></li>	
+				</ul>
+
+			    </div>
+			    <div class="intr">
+				
+				  <div class="name">Малявкин Юрий</div>
+			      <div class="welcome">
+					Добро пожаловать! Я начинающий веб-дизайнер и веб-разработчик. Здесь я расскажу вам о себе.
+			      </div>
+			      <a href="#section-1" class= "btn link" >Показать больше</a>
+
+		        </div>
+
+			</div>
+		<div class="header-img"></div>
+		</div>
+	</header>
+
+    <section  class="section-1" id="section-1">
+		<div class="container position">
+			<div class="about-img"></div>
+			<div class="about-box">
+				<div class ="abouttxt-1">Обо мне</div>
+				<div class="abouttxt-2">Привет меня зовут Юрий. Мне 18 лет , я живу в городе Ульяновск. Учусь в лучшем (на мой взгляд) университете УлГТУ.</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-2" id="section-2">
+		<div class="container position">
+			<div class="text-box-1">В свободное время я занимаюсь киберспортом, и занимаю 30 к + место в Европе по игре Valorant </div>
+			<div class="film"></div>
+		</div>
+	</section>
+
+	<section class="section-3" id="section-3">
+		<div class="container position">
+				<div class="main_gallary">
+					<div class="buttonGallary" onclick="leftChangeImage()"><img src="images/nextl.png"></div>
+					<div id ="mainImage">
+						
+					</div>
+					
+					<div class="buttonGallary" onclick="rightChangeImage()"><img src="images/nextr.png"></div>
+				</div>
+		</div> 
+	</section>
+
+
+	
+
+
+	
+	<footer id="footer">
+		<div class="container position">
+			<div class="social-box">
+				<div class="more-me">Контактная информация</div>
+				<ul class="social">
+					<li><a href="https://vk.com/strikk" target="_blank">VK</a></li>	
+				</ul>
+			</div>
+			<div class="phone">+ 7 962 633 83 43</div>
+		</div>
+	</footer>
+
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.link").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+	</script>
+
+
+</body>
+</html>
+

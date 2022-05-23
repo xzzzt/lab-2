@@ -1,0 +1,394 @@
+h1{
+	color: #ff2d62;	
+}
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Zen Dots';
+	color: #618EFF;
+	font-size: 96px;
+}
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 10px;
+}
+
+/*header*/
+.container{
+	width: 1290px;
+	margin: 0 auto;
+
+}
+header a {
+	color: #ff2d62;
+	
+}
+.position {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.header{
+	background: linear-gradient(to right, #ee955a, #fffdd0);
+	padding-bottom:120px;
+}
+.header-img {
+	width: 400px;
+	height: 435px;
+	background-image: url('img/img1.png');
+	background-size: cover;
+    align-self: flex-end;
+}
+
+.menu{
+	display: flex;
+	
+}
+.menu li a{
+	text-decoration: none;
+	font-size: 16px;
+
+
+}
+
+.social li a{
+
+	text-decoration: none;
+	font-size: 16px;
+	color: #ff2d62;
+
+}
+.social li a:hover {
+	border-bottom: 1px solid #FFF;
+}
+.menu li a:hover {
+	border-bottom: 1px solid #ff2d62;
+}
+.menu li{
+	margin-right: 40px;
+}
+
+.menu-box {
+	display: flex;
+	align-items: center;
+	color: #ff2d62;
+	font-size: 24px;
+	padding-top: 50px;
+	padding-bottom: 78px;
+}
+
+.name {
+	color: #ff2d62;
+	padding-bottom: 40px;
+}
+.welcome {
+	width: 480px;
+	color: #ff2d62;
+	font-size: 14px;
+	padding-bottom: 40px;
+}
+.btn {
+	display: block;
+	font-size: 24px;
+	text-align: center;
+	padding: 15px 30px;
+	color: #fff;
+	background-color: #ff2d62;
+	border: none;
+	width: 210px;
+	text-decoration: none;
+	transition-duration: 0.4s;
+
+}
+
+.btn:hover {
+    background-color: #83A5FB; 
+    color: #fff;
+}
+
+.intr{
+	width: 810px;/*текст ниже меню*/
+}
+
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+
+/*section-1*/
+
+.about-img{
+    width: 600px;
+	height: 510px;
+	background-image: url('img/ing1.png');
+	background-size: cover;
+    align-self: flex-end;
+
+}
+.about-box{
+    width: 468px;
+    color: #618EFF;
+    align-self: center;
+    
+
+}
+.abouttxt-1{
+	font-size: 48px;
+	padding-bottom: 20px;
+
+
+}
+.abouttxt-2{
+	font-size: 24px;
+}
+
+/*section-2*/
+.section-2{
+	background: linear-gradient(to right, #ee955a, #fffdd0);
+}
+
+.text-box-1{
+	width: 400px;
+	font-size: 24px;
+	color: #ff2d62;
+	align-self: center;
+}
+.film{
+	width: 724px;
+	height: 410px;
+    background-image: url('img/img2.png');
+	background-size: cover;
+    align-self: flex-end;
+}
+
+
+
+
+/*section-3*/
+
+.section-3{
+	background-color: #fff;
+	height: 450px;
+}
+
+.text-box-2{
+	width: 320px;
+	font-size: 20px;
+	color: #618EFF;
+	align-self: center;
+	padding-bottom: 50px;
+}
+.textwbtn{
+	align-self: center;
+}
+#mainImage{
+	width: 600px;
+	height: 401px;
+	display: flex;
+}
+
+.main_gallary{
+	width: 800px;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.elementImage{
+	height: 500px;
+	display: flex;
+}
+
+
+
+
+
+/*footer*/
+footer{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: linear-gradient(to right, #ee955a, #fffdd0);
+}
+.more-me{
+	font-size: 36px;
+}
+.social-box{
+	font-size: 36px;
+	color: #ff2d62;
+
+
+}
+.phone{
+	font-size: 36px;
+	color: #ff2d62;	
+}
+
+
+
+
+/*Media-screens*/
+@media screen and (max-width: 1300px) {
+	.container {
+		width: 1140px;
+	}
+	.header-box {
+		width: 100%;
+	}
+	.name{
+		width: 450px;
+		font-size: 44px;
+	}
+	.header-img{
+		width: 253px;
+	    height: 271px;
+		margin-left: 70px; 
+
+	}
+	.menu li{
+	margin-right: 10px;
+	font-size: 20px;
+	display:none;
+}
+
+
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 1140px;
+	}
+	.header-box {
+		width: 50%;
+	}
+	.name{
+		width: 450px;
+		font-size: 44px;
+	}
+	.header-img{
+		width: 300px;
+	    height: 371px;
+
+	}
+	.menu li{
+	margin-right: 10px;
+	    font-size: 20px;
+	
+	}
+	.btn{
+		width: 120px;
+	}
+	
+
+
+}
+
+@media screen and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
+	.name{
+		width: 350px;
+		font-size: 48px;
+	}
+
+	
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
+	.header-img{
+		width: 253px;
+	    height: 271px;
+	}
+	.about-img {
+    width: 613px;
+    height: 374px;
+}
+	.name {
+    width: 350px;
+    font-size: 50px;
+	}
+
+	.welcome {
+    width: 225px;
+    font-size: 18px;
+	}
+	#mainImage{
+	width: 300px;
+	}
+
+	.main_gallary{
+	width: 600px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	.container {
+		width: 540px;
+	}
+	.gallery-block{
+	display: flex;
+	flex-direction: column;
+	}
+	
+	
+}
+
+@media screen and (max-width: 575px) {
+	.container {
+		width: 100%;
+		
+	}
+	
+}
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+	background-color: #ff2d62;
+	padding: 2px;
+	font-size: 0px;
+	border: none;
+  }
+  	
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background: linear-gradient(to right, #ee955a, #fffdd0);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+	color: #ff2d62;
+	padding: 8px 12px;
+	font-size: 18px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #fff;}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: flex;}
+  
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  
+
+
